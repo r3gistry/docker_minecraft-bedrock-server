@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-LABEL maintainer="calvintam236"
+LABEL maintainer="R3GISTRY"
 LABEL description="Minecraft-Bedrock-Server in Docker."
 
 WORKDIR /tmp/
