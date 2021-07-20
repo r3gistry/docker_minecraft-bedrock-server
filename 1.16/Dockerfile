@@ -17,7 +17,6 @@ apt-get update \
 && mkdir /usr/local/minecraft-bedrock-server/ \
 && mv bedrock_server /usr/local/minecraft-bedrock-server/minecraft-bedrock-server \
 && chmod +x /usr/local/minecraft-bedrock-server/minecraft-bedrock-server \
-&& mv libCrypto.so /usr/local/minecraft-bedrock-server/ \
 && rm -r * \
 && apt-get -y --auto-remove purge unzip
 
