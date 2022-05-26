@@ -6,14 +6,14 @@ LABEL description="Minecraft-Bedrock-Server in Docker."
 WORKDIR /tmp/
 
 ADD \
-https://minecraft.azureedge.net/bin-linux/bedrock-server-1.18.12.01.zip \
+https://minecraft.azureedge.net/bin-linux/bedrock-server-1.18.30.04.zip \
 .
 
 RUN \
 apt-get update \
 && apt-get -y --no-install-recommends install libcurl4 libssl1.1 unzip \
 && rm -rf /var/lib/apt/lists/* \
-&& unzip bedrock-server-1.18.12.01.zip \
+&& unzip bedrock-server-1.18.30.04.zip \
 && mkdir /usr/local/minecraft-bedrock-server/ \
 && mv bedrock_server /usr/local/minecraft-bedrock-server/minecraft-bedrock-server \
 && chmod +x /usr/local/minecraft-bedrock-server/minecraft-bedrock-server \
